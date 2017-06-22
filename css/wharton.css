@@ -1,0 +1,300 @@
+
+
+
+
+/* ••••••••••••••••••• */
+/* = = = = = = = = = = */
+/* ••••••••••••••••••• */
+
+
+/* ------ GENERAL ------ */
+
+html {font-size: 14px;}
+
+a:focus, button:focus {
+    outline: none !important;
+    border: none !important;
+}
+
+textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus {
+    border-color: transparent;
+    box-shadow: 0 1px 1px rgba(255, 255, 255, 0.001) inset, 0 0 1px rgba(255, 255, 255, 0.1);
+    outline: 0 none;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    height: 100%;
+    max-width: 100%;
+}
+
+.main {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.navbar-default .navbar-toggle {
+    margin-top: 22px;
+    border: none;
+}
+
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar, .navbar-default .navbar-toggle .icon-bar {
+    background-color: #f7f7f7;
+
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.navbar-default .navbar-toggle:focus .icon-bar, .navbar-default .navbar-toggle:hover .icon-bar {
+    background-color: #ff7c50;
+}
+
+
+
+
+/* ================================== */
+/* ------ MAIN NAVIGATION BAR ------ */
+/* ================================== */
+
+.navbar-default.hlxweb_main_navbar {
+    position: absolute;
+    top: 22px;
+    z-index: 10;
+    height: 90px;
+    background: rgba(0,0,0,0);
+    border: none;
+    border-radius: 0;
+    width: 100%;
+}
+
+.navbar-header.hlxweb_navbar_header {
+    padding-top: 5px;
+}
+
+.navbar-nav.hlxweb_nav {
+    padding-top: 22px;
+    float: right;
+}
+
+.navbar-nav.hlxweb_nav li a {
+    font-weight: 400;
+    color: #f7f7f7;
+    font-size: 1rem;
+    text-transform: uppercase;
+
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.navbar-nav.hlxweb_nav li a:hover, .navbar-nav.hlxweb_nav li a:focus, .navbar-nav.hlxweb_nav li a:active, .navbar-nav.hlxweb_nav li a.active {
+    color: #c82647 !important;
+}
+
+.navbar-nav.hlxweb_nav li:nth-child(4){
+    padding-right: 18px;
+}
+
+img.logo_4_header {
+    width: 80%;
+}
+
+a.contact_homepage_button {
+    font-weight: 100;
+    color: #ffffff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border: 1px solid #ffffff;
+    border-radius: 2px;
+    background: rgba(255,255,255,0.1);
+    padding: 6px 24px 6px 24px !important;
+    position: relative;
+    top: 8px;
+
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+a.contact_homepage_button:hover, a.contact_homepage_button:focus {
+    background: #ffffff !important;
+    color: #666666 !important;
+    border: 1px solid #ffffff;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.navbar-nav>li>.dropdown-menu {
+    background: transparent;
+    margin-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.navbar-nav>li>.dropdown-menu>li>a:hover {
+    background: transparent;
+}
+
+
+
+
+
+/* ================================== */
+/* -------- MAIN HEADER AREA -------- */
+/* ================================== */
+
+.wharton_main_header_area {
+    position: relative;
+    width: 100%;
+    height: 775px !important;
+    overflow: hidden;
+    background: url(../img/main_bgd.jpg) no-repeat;
+    background-size: cover;
+}
+
+.tesuka {
+    position: relative;
+    width: 100%;
+    height: 775px !important;
+    overflow: hidden;
+    background: darkcyan;
+}
+
+.vertical_socialz_holder {
+    position: absolute;
+    left: 2%;
+    top: 40%
+}
+
+ul.vertical_socialz li {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+ul.vertical_socialz li a {
+    display: block;
+    height: 26px;
+    width: 26px;
+    background: #ffffff;
+    color: #c82647;
+    text-align: center;
+    font-size: 1.1rem;
+    padding-top: 3px;
+    border-radius: 100%;
+
+    -webkit-transition: all 0.4s ease-in;
+    -moz-transition: all 0.4s ease-in;
+    -ms-transition: all 0.4s ease-in;
+    -o-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+}
+
+ul.vertical_socialz li a:hover, ul.vertical_socialz li a:focus {
+    background: #c82647;
+    color: #ffffff;
+}
+
+
+
+
+
+/* ================================== */
+/* ---------- ABOUT AREA ---------- */
+/* ================================== */
+
+.about_area {
+    background: #000000;
+    min-height: 770px;
+    padding-top: 85px;
+    padding-bottom: 55px;
+}
+
+.about_content h2 {
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+span.wavvyy {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: 18px;
+    background: url(../img/wavy_deco.png) center center no-repeat;
+    background-size: contain;
+    margin-bottom: 40px;
+}
+
+.about_content p {
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 1.174rem;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+a.seemore_btn {
+    position: relative;
+    top: 35px;
+    display: block;
+    margin: 0 auto;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    width: 246px;
+    height: 46px;
+    padding-top: 12px;
+    border-radius: 5px;
+    background: #c82647;
+    color: #ffffff;
+
+    -webkit-transition: all 0.4s ease-in;
+    -moz-transition: all 0.4s ease-in;
+    -ms-transition: all 0.4s ease-in;
+    -o-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+}
+
+a.seemore_btn:hover, a.seemore_btn:focus {
+    background: #ffffff;
+    color: #c82647;
+}
+
+.oldskool_photo_holder {
+    padding-top: 75px;
+    padding-right: 26px;
+}
+
+.oldskool_photo {
+    display: block;
+    width: 495px;
+    height: 354px;
+    border-radius: 5px;
+    background: url(../img/oldskool.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
