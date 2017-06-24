@@ -10,6 +10,7 @@
 
     <!-- Google fonts -->
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
@@ -19,16 +20,14 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/hover.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
-    <link href="css/PageSwitch.css" rel="stylesheet">
     <link href="slick-1.6.0/slick/slick.css" rel="stylesheet">
     <link href="slick-1.6.0/slick/slick-theme.css" rel="stylesheet">
     <link href="css/wharton.css" rel="stylesheet">
     <link href="css/mq.css" rel="stylesheet">
 </head>
 <body>
-<div id="container" data-PageSwitch>
-    <div class="selections" style="position:relative">
-        <div class="selection" id="selection0">
+    <div id="main">
+        <div id="navAndHeader">
         <header>
         <nav class="navbar navbar-default hlxweb_main_navbar">
             <div class="container">
@@ -48,7 +47,7 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="hlxweb_collapse">
                     <ul class="nav navbar-nav hlxweb_nav">
-                        <li><a href="#">HOME</a></li>
+                        <li><a href="#" class="active">HOME</a></li>
                         <li><a href="#">ABOUT</a></li>
                         <li><a href="#">TEAM</a></li>
                         <li><a href="#">BRANDS</a></li>
@@ -58,7 +57,7 @@
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container -->
         </nav>
-    </header> <!-- Navbar/Header END -->
+    </header> <!-- Navbar END -->
 
     <div class="wharton_main_header_area">
         <div class="row">
@@ -71,10 +70,10 @@
             </div>
         </div>
     </div> <!-- Main header area END -->
-    </div> <!-- SECTION_0 END-->
+    </div> <!-- #NAV-and-HEADER END-->
 
-    <div class="selection" id="selection1">
-        <div class="about_area">
+    <div class="selection" id="about">
+        <div class="about_area" data-center-top="opacity:0;" data-top-top="opacity:1;">
             <div class="row">
                 <div class="container">
                     <div class="col-sm-6 about_content">
@@ -99,12 +98,612 @@
                     </div>
                 </div>
             </div>
+        </div> <!-- About Area END -->
+    </div> <!-- #ABOUT END-->
 
-        </div>
-    </div> <!-- SECTION_1 END-->
+    <div class="artificial_parallax_one" data-center="background-position: 50% 0px;"
+         data-top-bottom="background-position: 50% -100px;"
+         data-anchor-target="#about">
+    </div>
 
-    <div class="selection" id="selection2">
+    <div id="team">
         <div class="team_area">
+            <div class="row">
+                <div class="container">
+                    <h2 class="team_area_ttl">Meet our team</h2>
+                    <div class="panel panel-default" id="panel_1">
+                        <div class="team_visible_default_holder">
+                        <div class="col-sm-4 team_memba_boxx">
+                            <div class="team_memba_pic" style="background: url('img/christian.jpg') center center no-repeat; background-size: cover;"></div>
+                            <h4 class="team_memba_name">Christian</h4>
+                            <hr class="team_memba_red_separator">
+                            <div class="three_option_box">
+                                <div class="option">
+                                    <section class="favoption_circle">
+                                        <span class="beer"></span>
+                                    </section>
+                                    <section class="favoption_text">
+                                        <h5>Favorite beer</h5>
+                                        <p>Embark Craft</p>
+                                    </section>
+                                </div>
+
+                                <div class="option">
+                                    <section class="favoption_circle">
+                                        <span class="bar"></span>
+                                    </section>
+                                    <section class="favoption_text">
+                                        <h5>Neighborhood bar</h5>
+                                        <p>The Good King Tavern</p>
+                                    </section>
+                                </div>
+
+                                <div class="option">
+                                    <section class="favoption_circle">
+                                        <span class="band"></span>
+                                    </section>
+                                    <section class="favoption_text">
+                                        <h5>Favorite band</h5>
+                                        <p>Daft Punk</p>
+                                    </section>
+                                </div>
+                            </div>
+                        </div> <!-- Team Memba Box END -->
+
+                        <div class="col-sm-4 team_memba_boxx">
+                            <div class="team_memba_pic" style="background: url('img/jason.jpg') center center no-repeat; background-size: cover;"></div>
+                            <h4 class="team_memba_name">Jason</h4>
+                            <hr class="team_memba_red_separator">
+                            <div class="three_option_box">
+                                <div class="option">
+                                    <section class="favoption_circle">
+                                        <span class="beer"></span>
+                                    </section>
+                                    <section class="favoption_text">
+                                        <h5>Favorite beer</h5>
+                                        <p>Leelanau</p>
+                                    </section>
+                                </div>
+
+                                <div class="option">
+                                    <section class="favoption_circle">
+                                        <span class="bar"></span>
+                                    </section>
+                                    <section class="favoption_text">
+                                        <h5>Neighborhood bar</h5>
+                                        <p>The Dead Rabbit</p>
+                                    </section>
+                                </div>
+
+                                <div class="option">
+                                    <section class="favoption_circle">
+                                        <span class="band"></span>
+                                    </section>
+                                    <section class="favoption_text">
+                                        <h5>Favorite band</h5>
+                                        <p>Submotion Orchestra</p>
+                                    </section>
+                                </div>
+                            </div>
+                        </div> <!-- Team Memba Box END -->
+
+                        <div class="col-sm-4 team_memba_boxx">
+                            <div class="team_memba_pic" style="background: url('img/jim.jpg') center center no-repeat; background-size: cover;"></div>
+                            <h4 class="team_memba_name">Jim</h4>
+                            <hr class="team_memba_red_separator">
+                            <div class="three_option_box">
+                                <div class="option">
+                                    <section class="favoption_circle">
+                                        <span class="beer"></span>
+                                    </section>
+                                    <section class="favoption_text">
+                                        <h5>Favorite beer</h5>
+                                        <p>Kelso</p>
+                                    </section>
+                                </div>
+
+                                <div class="option">
+                                    <section class="favoption_circle">
+                                        <span class="bar"></span>
+                                    </section>
+                                    <section class="favoption_text">
+                                        <h5>Neighborhood bar</h5>
+                                        <p>777 Pub & Co.</p>
+                                    </section>
+                                </div>
+
+                                <div class="option">
+                                    <section class="favoption_circle">
+                                        <span class="band"></span>
+                                    </section>
+                                    <section class="favoption_text">
+                                        <h5>Favorite band</h5>
+                                        <p>Pink Floyd</p>
+                                    </section>
+                                </div>
+                            </div>
+                        </div> <!-- Team Memba Box END -->
+
+                            <div class="all_folks_button_holder">
+                                <a id="collapser" data-toggle="collapse" data-target="#collapseOne" href="#collapseOne" class="btn seemore_btn_2 collapsed">Show All Folks</a>
+                            </div>
+
+                        </div> <!-- Team Visible Default END -->
+
+                        <div id="collapseOne" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div class="team_memba_hidden_area">
+                                    <div class="col-sm-4 team_memba_boxx">
+                                        <div class="team_memba_pic" style="background: url('img/jake.jpg') center center no-repeat; background-size: cover;"></div>
+                                        <h4 class="team_memba_name">Jake</h4>
+                                        <hr class="team_memba_red_separator">
+                                        <div class="three_option_box">
+                                            <div class="option">
+                                                <section class="favoption_circle">
+                                                    <span class="beer"></span>
+                                                </section>
+                                                <section class="favoption_text">
+                                                    <h5>Favorite beer</h5>
+                                                    <p>Oxbow</p>
+                                                </section>
+                                            </div>
+
+                                            <div class="option">
+                                                <section class="favoption_circle">
+                                                    <span class="bar"></span>
+                                                </section>
+                                                <section class="favoption_text">
+                                                    <h5>Neighborhood bar</h5>
+                                                    <p>The Dead Rabbit</p>
+                                                </section>
+                                            </div>
+
+                                            <div class="option">
+                                                <section class="favoption_circle">
+                                                    <span class="band"></span>
+                                                </section>
+                                                <section class="favoption_text">
+                                                    <h5>Favorite band</h5>
+                                                    <p>The K.L.F.</p>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div> <!-- Team Memba Box END -->
+
+                                    <div class="col-sm-4 team_memba_boxx">
+                                        <div class="team_memba_pic" style="background: url('img/jade.jpg') center center no-repeat; background-size: cover;"></div>
+                                        <h4 class="team_memba_name">Jade</h4>
+                                        <hr class="team_memba_red_separator">
+                                        <div class="three_option_box">
+                                            <div class="option">
+                                                <section class="favoption_circle">
+                                                    <span class="beer"></span>
+                                                </section>
+                                                <section class="favoption_text">
+                                                    <h5>Favorite beer</h5>
+                                                    <p>Neshaminy Creek</p>
+                                                </section>
+                                            </div>
+
+                                            <div class="option">
+                                                <section class="favoption_circle">
+                                                    <span class="bar"></span>
+                                                </section>
+                                                <section class="favoption_text">
+                                                    <h5>Neighborhood bar</h5>
+                                                    <p>777 Pub & Co.</p>
+                                                </section>
+                                            </div>
+
+                                            <div class="option">
+                                                <section class="favoption_circle">
+                                                    <span class="band"></span>
+                                                </section>
+                                                <section class="favoption_text">
+                                                    <h5>Favorite band</h5>
+                                                    <p>Gang Starr</p>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div> <!-- Team Memba Box END -->
+
+                                    <div class="col-sm-4 team_memba_boxx">
+                                        <div class="team_memba_pic" style="background: url('img/steve.jpg') center center no-repeat; background-size: cover;"></div>
+                                        <h4 class="team_memba_name">Steve</h4>
+                                        <hr class="team_memba_red_separator">
+                                        <div class="three_option_box">
+                                            <div class="option">
+                                                <section class="favoption_circle">
+                                                    <span class="beer"></span>
+                                                </section>
+                                                <section class="favoption_text">
+                                                    <h5>Favorite beer</h5>
+                                                    <p>Leelanau</p>
+                                                </section>
+                                            </div>
+
+                                            <div class="option">
+                                                <section class="favoption_circle">
+                                                    <span class="bar"></span>
+                                                </section>
+                                                <section class="favoption_text">
+                                                    <h5>Neighborhood bar</h5>
+                                                    <p>Uncle Freddy's</p>
+                                                </section>
+                                            </div>
+
+                                            <div class="option">
+                                                <section class="favoption_circle">
+                                                    <span class="band"></span>
+                                                </section>
+                                                <section class="favoption_text">
+                                                    <h5>Favorite band</h5>
+                                                    <p>The Chemical Brothers</p>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div> <!-- Team Memba Box END -->
+
+                                    <!-- Row 2 Start-->
+
+                                    <div class="col-sm-4 team_memba_boxx">
+                                        <div class="team_memba_pic" style="background: url('img/rachel.jpg') center center no-repeat; background-size: cover;"></div>
+                                        <h4 class="team_memba_name">Rachel</h4>
+                                        <hr class="team_memba_red_separator">
+                                        <div class="three_option_box">
+                                            <div class="option">
+                                                <section class="favoption_circle">
+                                                    <span class="beer"></span>
+                                                </section>
+                                                <section class="favoption_text">
+                                                    <h5>Favorite beer</h5>
+                                                    <p>Leelanau</p>
+                                                </section>
+                                            </div>
+
+                                            <div class="option">
+                                                <section class="favoption_circle">
+                                                    <span class="bar"></span>
+                                                </section>
+                                                <section class="favoption_text">
+                                                    <h5>Neighborhood bar</h5>
+                                                    <p>Pawn Shop Bar</p>
+                                                </section>
+                                            </div>
+
+                                            <div class="option">
+                                                <section class="favoption_circle">
+                                                    <span class="band"></span>
+                                                </section>
+                                                <section class="favoption_text">
+                                                    <h5>Favorite band</h5>
+                                                    <p>Massive Attack</p>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div> <!-- Team Memba Box END -->
+
+                                    <div class="col-sm-4 team_memba_boxx">
+                                        <div class="team_memba_pic" style="background: url('img/sabrina.jpg') center center no-repeat; background-size: cover;"></div>
+                                        <h4 class="team_memba_name">Sabrina</h4>
+                                        <hr class="team_memba_red_separator">
+                                        <div class="three_option_box">
+                                            <div class="option">
+                                                <section class="favoption_circle">
+                                                    <span class="beer"></span>
+                                                </section>
+                                                <section class="favoption_text">
+                                                    <h5>Favorite beer</h5>
+                                                    <p>Original Sin</p>
+                                                </section>
+                                            </div>
+
+                                            <div class="option">
+                                                <section class="favoption_circle">
+                                                    <span class="bar"></span>
+                                                </section>
+                                                <section class="favoption_text">
+                                                    <h5>Neighborhood bar</h5>
+                                                    <p>777 Pub & Co.</p>
+                                                </section>
+                                            </div>
+
+                                            <div class="option">
+                                                <section class="favoption_circle">
+                                                    <span class="band"></span>
+                                                </section>
+                                                <section class="favoption_text">
+                                                    <h5>Favorite band</h5>
+                                                    <p>Coldplay</p>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div> <!-- Team Memba Box END -->
+
+                                    <div class="col-sm-4 team_memba_boxx">
+                                        <div class="team_memba_pic" style="background: url('img/anthonie.jpg') center center no-repeat; background-size: cover;"></div>
+                                        <h4 class="team_memba_name">Anthony</h4>
+                                        <hr class="team_memba_red_separator">
+                                        <div class="three_option_box">
+                                            <div class="option">
+                                                <section class="favoption_circle">
+                                                    <span class="beer"></span>
+                                                </section>
+                                                <section class="favoption_text">
+                                                    <h5>Favorite beer</h5>
+                                                    <p>Kelso</p>
+                                                </section>
+                                            </div>
+
+                                            <div class="option">
+                                                <section class="favoption_circle">
+                                                    <span class="bar"></span>
+                                                </section>
+                                                <section class="favoption_text">
+                                                    <h5>Neighborhood bar</h5>
+                                                    <p>Dope Bar</p>
+                                                </section>
+                                            </div>
+
+                                            <div class="option">
+                                                <section class="favoption_circle">
+                                                    <span class="band"></span>
+                                                </section>
+                                                <section class="favoption_text">
+                                                    <h5>Favorite band</h5>
+                                                    <p>DJ Shadow</p>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div> <!-- Team Memba Box END -->
+
+                                    <!-- Row 3 Start-->
+
+                                    <div class="col-sm-4 team_memba_boxx">
+                                        <div class="team_memba_pic" style="background: url('img/katharine.jpg') center center no-repeat; background-size: cover;"></div>
+                                        <h4 class="team_memba_name">Katharine</h4>
+                                        <hr class="team_memba_red_separator">
+                                        <div class="three_option_box">
+                                            <div class="option">
+                                                <section class="favoption_circle">
+                                                    <span class="beer"></span>
+                                                </section>
+                                                <section class="favoption_text">
+                                                    <h5>Favorite beer</h5>
+                                                    <p>Lakefront</p>
+                                                </section>
+                                            </div>
+
+                                            <div class="option">
+                                                <section class="favoption_circle">
+                                                    <span class="bar"></span>
+                                                </section>
+                                                <section class="favoption_text">
+                                                    <h5>Neighborhood bar</h5>
+                                                    <p>The Good King Tavern</p>
+                                                </section>
+                                            </div>
+
+                                            <div class="option">
+                                                <section class="favoption_circle">
+                                                    <span class="band"></span>
+                                                </section>
+                                                <section class="favoption_text">
+                                                    <h5>Favorite band</h5>
+                                                    <p>Maroon 5</p>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div> <!-- Team Memba Box END -->
+
+                                    <div class="col-sm-4 team_memba_boxx">
+                                        <div class="team_memba_pic" style="background: url('img/dan.jpg') center center no-repeat; background-size: cover;"></div>
+                                        <h4 class="team_memba_name">Dan</h4>
+                                        <hr class="team_memba_red_separator">
+                                        <div class="three_option_box">
+                                            <div class="option">
+                                                <section class="favoption_circle">
+                                                    <span class="beer"></span>
+                                                </section>
+                                                <section class="favoption_text">
+                                                    <h5>Favorite beer</h5>
+                                                    <p>Trinity</p>
+                                                </section>
+                                            </div>
+
+                                            <div class="option">
+                                                <section class="favoption_circle">
+                                                    <span class="bar"></span>
+                                                </section>
+                                                <section class="favoption_text">
+                                                    <h5>Neighborhood bar</h5>
+                                                    <p>The Good King Tavern</p>
+                                                </section>
+                                            </div>
+
+                                            <div class="option">
+                                                <section class="favoption_circle">
+                                                    <span class="band"></span>
+                                                </section>
+                                                <section class="favoption_text">
+                                                    <h5>Favorite band</h5>
+                                                    <p>De La Soul</p>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div> <!-- Team Memba Box END -->
+
+                                    <div class="col-sm-4 team_memba_boxx">
+                                        <div class="team_memba_pic" style="background: url('img/john.jpg') center center no-repeat; background-size: cover;"></div>
+                                        <h4 class="team_memba_name">John</h4>
+                                        <hr class="team_memba_red_separator">
+                                        <div class="three_option_box">
+                                            <div class="option">
+                                                <section class="favoption_circle">
+                                                    <span class="beer"></span>
+                                                </section>
+                                                <section class="favoption_text">
+                                                    <h5>Favorite beer</h5>
+                                                    <p>Stillwater Artisanal</p>
+                                                </section>
+                                            </div>
+
+                                            <div class="option">
+                                                <section class="favoption_circle">
+                                                    <span class="bar"></span>
+                                                </section>
+                                                <section class="favoption_text">
+                                                    <h5>Neighborhood bar</h5>
+                                                    <p>The Dead Rabbit</p>
+                                                </section>
+                                            </div>
+
+                                            <div class="option">
+                                                <section class="favoption_circle">
+                                                    <span class="band"></span>
+                                                </section>
+                                                <section class="favoption_text">
+                                                    <h5>Favorite band</h5>
+                                                    <p>Crazy P</p>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div> <!-- Team Memba Box END -->
+
+                                    <!-- Row 3 Start-->
+
+                                    <div class="col-sm-4 team_memba_boxx">
+                                        <div class="team_memba_pic" style="background: url('img/Lauren.jpg') center center no-repeat; background-size: cover;"></div>
+                                        <h4 class="team_memba_name">Laureen</h4>
+                                        <hr class="team_memba_red_separator">
+                                        <div class="three_option_box">
+                                            <div class="option">
+                                                <section class="favoption_circle">
+                                                    <span class="beer"></span>
+                                                </section>
+                                                <section class="favoption_text">
+                                                    <h5>Favorite beer</h5>
+                                                    <p>Omnipollo</p>
+                                                </section>
+                                            </div>
+
+                                            <div class="option">
+                                                <section class="favoption_circle">
+                                                    <span class="bar"></span>
+                                                </section>
+                                                <section class="favoption_text">
+                                                    <h5>Neighborhood bar</h5>
+                                                    <p>The Good King Tavern</p>
+                                                </section>
+                                            </div>
+
+                                            <div class="option">
+                                                <section class="favoption_circle">
+                                                    <span class="band"></span>
+                                                </section>
+                                                <section class="favoption_text">
+                                                    <h5>Favorite band</h5>
+                                                    <p>Depeche Mode</p>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div> <!-- Team Memba Box END -->
+
+                                    <div class="col-sm-4 team_memba_boxx">
+                                        <div class="team_memba_pic" style="background: url('img/colleen.jpg') center center no-repeat; background-size: cover;"></div>
+                                        <h4 class="team_memba_name">Colleen</h4>
+                                        <hr class="team_memba_red_separator">
+                                        <div class="three_option_box">
+                                            <div class="option">
+                                                <section class="favoption_circle">
+                                                    <span class="beer"></span>
+                                                </section>
+                                                <section class="favoption_text">
+                                                    <h5>Favorite beer</h5>
+                                                    <p>Short's</p>
+                                                </section>
+                                            </div>
+
+                                            <div class="option">
+                                                <section class="favoption_circle">
+                                                    <span class="bar"></span>
+                                                </section>
+                                                <section class="favoption_text">
+                                                    <h5>Neighborhood bar</h5>
+                                                    <p>Dope Bar</p>
+                                                </section>
+                                            </div>
+
+                                            <div class="option">
+                                                <section class="favoption_circle">
+                                                    <span class="band"></span>
+                                                </section>
+                                                <section class="favoption_text">
+                                                    <h5>Favorite band</h5>
+                                                    <p>The Beatles</p>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div> <!-- Team Memba Box END -->
+
+                                    <div class="col-sm-4 team_memba_boxx">
+                                        <div class="team_memba_pic" style="background: url('img/caitlin.jpg') center center no-repeat; background-size: cover;"></div>
+                                        <h4 class="team_memba_name">Caitlin</h4>
+                                        <hr class="team_memba_red_separator">
+                                        <div class="three_option_box">
+                                            <div class="option">
+                                                <section class="favoption_circle">
+                                                    <span class="beer"></span>
+                                                </section>
+                                                <section class="favoption_text">
+                                                    <h5>Favorite beer</h5>
+                                                    <p>4 Hands</p>
+                                                </section>
+                                            </div>
+
+                                            <div class="option">
+                                                <section class="favoption_circle">
+                                                    <span class="bar"></span>
+                                                </section>
+                                                <section class="favoption_text">
+                                                    <h5>Neighborhood bar</h5>
+                                                    <p>The Good King Tavern</p>
+                                                </section>
+                                            </div>
+
+                                            <div class="option">
+                                                <section class="favoption_circle">
+                                                    <span class="band"></span>
+                                                </section>
+                                                <section class="favoption_text">
+                                                    <h5>Favorite band</h5>
+                                                    <p>Jagged Edge</p>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div> <!-- Team Memba Box END -->
+
+                                </div>
+
+                                <div class="all_folks_button_holder_hidden">
+                                    <a id="de_collapser" data-toggle="collapse" data-target="#collapseOne" href="#collapseOne" class="btn seemore_btn_2 collapsed">Show Less Folks</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div> <!-- #panel_1 END -->
+                </div>
+            </div>
+        </div>
+    </div> <!-- #TEAM END-->
+
+    <div class="artificial_parallax_two" data-center="background-position: 50% 0px;"
+         data-top-bottom="background-position: 50% -100px;"
+         data-anchor-target="#selection1">
+    </div>
+
+    <div id="branz">
+        <div class="brandz_area">
             <div class="row">
                 <div class="container">
 
@@ -119,17 +718,25 @@
 
 
 
-        </div>
-</div> <!-- Main END -->
+
+
+    </div> <!-- Main END -->
 
 <!-- jQuery'z -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-<script src="js/pageSwitch.js"></script>
+    <script type="text/javascript" src="js/skrollr.min.js"></script>
+    <script>
+        var s = skrollr.init();
+    </script>
 
-<!-- JSz -->
+
+    <!-- JSz -->
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="slick-1.6.0/slick/slick.js"></script>
 <script type="text/javascript" src="js/wharton.js"></script>
+
+
+
 
 </body>
 </html>
