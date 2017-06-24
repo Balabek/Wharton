@@ -495,6 +495,10 @@ a.seemore_btn_2:hover, a.seemore_btn_2:focus {
     border: none !important;
 }
 
+.panel-body {
+    padding: 0;
+}
+
 
 
 
@@ -523,10 +527,62 @@ a.seemore_btn_2:hover, a.seemore_btn_2:focus {
 /* ================================== */
 
 .brandz_area {
-    min-height: 770px;
+    min-height: 710px;
     padding-top: 85px;
     padding-bottom: 55px;
     background: url('../img/brandz_bgd.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+h2.brandz_area_ttl {
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 75px;
+    text-transform: uppercase;
+}
+
+.brandboxx {
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 46px;
+}
+
+a.brandlinx span {
+    display: block;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+}
+
+
+.all_brandz_button_holder {
+    padding-top: 24px;
+    clear: both;
+}
+
+.all_brandz_button_holder_hidden {
+    padding-top: 24px;
+    clear: both;
+}
+
+
+
+
+
+/* ================================== */
+/* -------- PARALLAX THREE -------- */
+/* ================================== */
+
+
+.artificial_parallax_three {
+    height: 610px;
+    background: url("../img/oldtimez.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
@@ -536,13 +592,9 @@ a.seemore_btn_2:hover, a.seemore_btn_2:focus {
 
 
 
-
-
-
-
-
-
-
-
-
-
+footer.wharton_footer {
+    min-height: 210px;
+    height: auto;
+    background: url('../img/blackforest_bgd.jpg') center center no-repeat;
+    background-size: cover;
+}
