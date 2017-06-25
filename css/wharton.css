@@ -9,7 +9,7 @@
 
 /* ------ GENERAL ------ */
 
-html {font-size: 14px;}
+html {font-size: 14px; min-height: 100%;}
 
 a:focus, button:focus {
     outline: none !important;
@@ -23,6 +23,8 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 }
 
 body {
+    position: relative;
+    min-height: 100%;
     font-family: "Lato", sans-serif;
     font-size: 14px;
     height: 100%;
@@ -176,6 +178,24 @@ a.contact_homepage_button:hover, a.contact_homepage_button:focus {
     overflow: hidden;
     background: url(../img/main_bgd.jpg) no-repeat;
     background-size: cover;
+}
+
+.go_down_chevron_holder {
+    display: block;
+    width: 78%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 30px;
+    text-align: center;
+}
+
+a.go_down {
+    display: inline-block;
+    height: 26px;
+    width: 26px;
+    text-align: center;
+    background: url('../img/down-arrow.png') center center no-repeat;
+    background-size: contain;
 }
 
 .tesuka {
@@ -591,10 +611,277 @@ a.brandlinx span {
 
 
 
+/* ================================== */
+/* ------------- FOOTER ------------- */
+/* ================================== */
 
 footer.wharton_footer {
     min-height: 210px;
     height: auto;
     background: url('../img/blackforest_bgd.jpg') center center no-repeat;
     background-size: cover;
+    padding-top: 30px;
 }
+
+span.logo_footer_1 {
+    display: block;
+    float: left;
+    width: 100px;
+    height: 90px;
+}
+
+span.logo_footer_2 {
+    display: block;
+    float: left;
+    width: 210px;
+    height: 90px;
+}
+
+hr.footer_red_separator {
+    display: inline-block;
+    background-color: #c82647;
+    width: 80%;
+    height: 1px;
+    border: none;
+    clear: both;
+    margin-bottom: 4px;
+}
+
+small.footer_microtext {
+    display: block;
+    clear: both;
+    font-size: 0.888rem;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: left;
+}
+
+ul.footer_linxx {
+    padding-left: 20px;
+}
+
+ul.footer_linxx li {
+    list-style-type: none;
+    text-align: left;
+}
+
+ul.footer_linxx li a {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #f7f7f7;
+    margin-bottom: 10px;
+    line-height: 2.2;
+    text-decoration: none;
+
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+ul.footer_linxx li a:hover, ul.footer_linxx li a:focus {
+    color: #c82647;
+}
+
+.footer_social_holder {
+    position: relative;
+    left: 2%;
+}
+
+ul.footer_socialz li {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+ul.footer_socialz li a {
+    display: block;
+    height: 26px;
+    width: 26px;
+    background: #ffffff;
+    color: #c82647;
+    text-align: center;
+    font-size: 1.1rem;
+    padding-top: 3px;
+    border-radius: 100%;
+
+    -webkit-transition: all 0.4s ease-in;
+    -moz-transition: all 0.4s ease-in;
+    -ms-transition: all 0.4s ease-in;
+    -o-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+}
+
+ul.footer_socialz li a:hover, ul.footer_socialz li a:focus {
+    background: #c82647;
+    color: #ffffff;
+}
+
+
+
+
+
+/* ================================== */
+/* --------- AGE VALIDATOR --------- */
+/* ================================== */
+
+.age_validator {
+    /*display: none;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 888;
+    background-color: rgba(0,0,0,0.799);
+}
+
+.validator_window {
+    display: block;
+    border-radius: 5px;
+    width: 70%;
+    height: 650px;
+    margin: 0 auto;
+    position: relative;
+    top: 1%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../img/red_forest_bgd.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.age_validator_logo_holder img {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 13%;
+    padding-top: 18px;
+}
+
+.val_txt_holder {
+    padding-top: 8%;
+}
+
+h1.validator_question {
+    font-family: "Open Sans Condensed", sans-serif;
+    text-align: center;
+    font-size: 5.2rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+h4.rejection_message {
+    font-family: "Open Sans Condensed", sans-serif;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: 75px;
+}
+
+.yesno_buttonz {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+button.yes_btn {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    font-family: "Proxima Nova", sans-serif;
+    width: 25%;
+    background: #ffffff;
+    font-size: 2.6rem;
+    font-weight: 900;
+    color: #c82647;
+    height: 60px;
+    margin-right: 24px;
+    letter-spacing: 2px;
+
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+
+button.yes_btn:hover, button.yes_btn:focus {
+    background: #f8f8f8;
+    color: #f92f58;
+}
+
+
+button.no_btn {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    font-family: "Proxima Nova", sans-serif;
+    width: 25%;
+    background: #252525;
+    font-size: 2.6rem;
+    font-weight: 900;
+    color: #c82647;
+    height: 60px;
+    letter-spacing: 2px;
+
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+
+button.no_btn:hover, button.no_btn:focus {
+    background: #cccccc;
+    color: #262626;
+}
+
+.validator_socialz_holder {
+    position: absolute;
+    bottom: 2px;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+ul.validator_socialz {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    bottom: 7px;
+}
+
+
+ul.validator_socialz li {
+    list-style-type: none;
+    float: left;
+    margin-right: 14px;
+}
+
+ul.validator_socialz li a {
+    display: block;
+    height: 26px;
+    width: 26px;
+    background: #ffffff;
+    color: #c82647;
+    text-align: center;
+    font-size: 1.1rem;
+    padding-top: 3px;
+    border-radius: 100%;
+
+    -webkit-transition: all 0.4s ease-in;
+    -moz-transition: all 0.4s ease-in;
+    -ms-transition: all 0.4s ease-in;
+    -o-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+}
+
+ul.validator_socialz li a:hover, ul.validator_socialz li a:focus {
+    background: #262626;
+    color: #ffffff;
+}
+
+

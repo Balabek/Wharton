@@ -55,4 +55,28 @@ $(document).ready(function(){
 
 
 
+    var yesButton = $('#yup');
+    var noButton = $('#nope');
+
+    $(noButton).on('click', function() {
+        $('h1.validator_question').addClass('hidden');
+        $('.yesno_buttonz').addClass('hidden');
+        $('h4.rejection_message').removeClass('hidden');
+
+        window.location.replace("https://www.youtube.com/user/tutitutv");
+
+    });
+
+    $(yesButton).on('click', function() {
+        $('.age_validator').css('display','none');
+
+    })
+
+
+
+
+
+
+
+
 });

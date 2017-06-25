@@ -26,6 +26,30 @@
     <link href="css/mq.css" rel="stylesheet">
 </head>
 <body>
+
+    <div class="age_validator"> <!-- Age Validator START -->
+        <div class="validator_window">
+            <div class="age_validator_logo_holder center-block">
+                <img src="img/Logo-oldie.png" class="img-responsive">
+            </div>
+            <div class="val_txt_holder">
+                <h1 class="validator_question center-block">Are you over 21?</h1>
+                <h4 class="rejection_message hidden">We are sorry, you must be 21 to visit this website! </h4>
+            </div>
+            <div class="yesno_buttonz">
+                <button id="yup" class="btn yes_btn hvr-glow">YES</button>
+                <button id="nope" class="btn no_btn hvr-glow">NO</button>
+            </div>
+            <div class="validator_socialz_holder">
+                <ul class="validator_socialz">
+                    <li><a href="https://www.facebook.com/31standWharton/"><i class="fa fa-facebook-f"></i></a> </li>
+                    <li><a href="https://www.instagram.com/31standwharton/"><i class="fa fa-instagram"></i></a> </li>
+                    <li><a href="https://twitter.com/Devilsdenphilly/status/870676421894692865"><i class="fa fa-twitter"></i></a> </li>
+                </ul>
+            </div>
+        </div>
+    </div> <!-- Age Validator END -->
+
     <div id="main">
             <div class="selection" id="selection0">
             <header>
@@ -68,6 +92,9 @@
                             <li><a href="https://www.instagram.com/31standwharton/"><i class="fa fa-instagram"></i></a> </li>
                             <li><a href="https://twitter.com/Devilsdenphilly/status/870676421894692865"><i class="fa fa-twitter"></i></a> </li>
                         </ul>
+                    </div>
+                    <div class="go_down_chevron_holder">
+                        <a href="#selection1" class="anchor go_down hvr-pulse"></a>
                     </div>
                 </div>
             </div>
@@ -713,6 +740,7 @@
                         <h2 class="brandz_area_ttl">Our Brands</h2>
                         <div class="panel panel-default" id="panel_2">
                             <div class="brandz_visible_default_holder">
+
                                 <!-- Row 1 -->
                                 <div class="col-sm-2 brandboxx">
                                     <a href="#" class="brandlinx hvr-float">
@@ -745,8 +773,7 @@
                                     </a>
                                 </div>
 
-                                <!-- Row 1 -->
-
+                                <!-- Row 2 -->
                                 <div class="col-sm-2 brandboxx">
                                     <a href="#" class="brandlinx hvr-float">
                                         <span style="background: url('img/brand_7.png') center center no-repeat; background-size: cover;"></span>
@@ -779,7 +806,7 @@
                                 </div>
 
                                 <div class="all_brandz_button_holder">
-                                    <a id="collapser_2" data-toggle="collapse" data-target="#collapseTwo" href="#collapseTwo" class="btn seemore_btn_2 collapsed">Show More</a>
+                                    <a id="collapser_2" data-toggle="collapse" data-target="#collapseTwo" href="#hiddenAnchoirPoint" class="anchor btn seemore_btn_2 collapsed">Show More</a>
                                 </div>
 
                             </div> <!-- Brandz Visible Default END -->
@@ -916,6 +943,7 @@
                                             </a>
                                         </div>
 
+                                        <div id="hiddenAnchoirPoint"></div>
                                         <!-- Row 5 -->
                                         <div class="col-sm-2 brandboxx">
                                             <a href="#" class="brandlinx hvr-float">
@@ -970,7 +998,35 @@
         <footer id="ftr" class="wharton_footer">
             <div class="row">
                 <div class="container">
-
+                    <div class="col-sm-4 basement_logos_holder">
+                        <span class="logo_footer_1" style="background: url('img/Logo-2.png') center center no-repeat; background-size: contain;"></span>
+                        <span class="logo_footer_2" style="background: url('img/Logo-oldie.png') center center no-repeat; background-size: contain;"></span>
+                        <hr class="footer_red_separator">
+                        <small class="footer_microtext">&copy; 2017 31st and Wharton. All Rights Reserved</small>
+                    </div>
+                    <div class="col-sm-3 footer_linxx_holder">
+                        <ul class="footer_linxx">
+                            <li><a href="#selection0" class="anchor">HOME</a> </li>
+                            <li><a href="#selection1" class="anchor">ABOUT</a> </li>
+                            <li><a href="#selection2" class="anchor">TEAM</a> </li>
+                            <li><a href="#selection3" class="anchor">BRANDS</a> </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 footer_linxx_holder">
+                        <ul class="footer_linxx">
+                            <li><a href="#">CONTACT</a> </li>
+                            <li><a href="#">BREWING TECHNOLOGIES</a> </li>
+                            <li><a href="#">PRIVACY</a> </li>
+                            <li><a href="#">FOR PARTNERS</a> </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2 footer_social_holder">
+                        <ul class="footer_socialz">
+                            <li><a href="https://www.facebook.com/31standWharton/"><i class="fa fa-facebook-f"></i></a> </li>
+                            <li><a href="https://www.instagram.com/31standwharton/"><i class="fa fa-instagram"></i></a> </li>
+                            <li><a href="https://twitter.com/Devilsdenphilly/status/870676421894692865"><i class="fa fa-twitter"></i></a> </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </footer>
