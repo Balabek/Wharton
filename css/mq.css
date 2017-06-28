@@ -1,0 +1,309 @@
+/*
+░▄▀ ░▄▀ 　 ▒█▀▄▀█ ▒█▀▀█ 　 ▀▄░ ▀▄░
+█░░ █░░ 　 ▒█▒█▒█ ▒█░▒█ 　 ░░█ ░░█
+░▀▄ ░▀▄ 　 ▒█░░▒█ ░▀▀█▄ 　 ▄▀░ ▄▀░
+*/
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* >>>>>>>> I M P O R T A N T ! <<<<<<<<< */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* >>>>> LG/XL <<<<< */
+
+
+/* >>>>> SM/XS <<<<< */
+@media screen and (max-width: 767px){
+    #hlxweb_collapse {
+        position: relative;
+        top: 16px;
+        border-top: 4px solid #c82647;
+        background-color: rgba(0,0,0,0.9);
+        padding-bottom: 6px;
+    }
+}
+
+/* >>>>> SM/XS <<<<< */
+@media screen and (max-width: 767px){
+    #hlxweb_collapse_inner {
+        position: relative;
+        padding-top: 36px;
+        top: -38px;
+        border-top: 4px solid #c82647;
+        padding-bottom: 1px;
+    }
+
+    .navbar-nav.hlxweb_nav {padding-top: 0;}
+}
+
+@media screen and (max-width: 371px){
+    #hlxweb_collapse {top: 20px;}
+}
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* -------- NAV & HEADER ---------- */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* >>>>> LG/XL <<<<< */
+
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 991px) {
+    .wharton_main_header_area {background-position: -150px 0;}
+}
+
+@media screen and (max-width: 767px){
+    .wharton_main_header_area {background-position: -265px 0;}
+
+    img.logo_4_header {
+        position: relative;
+        top: -12px;
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 535px) {
+    .wharton_main_header_area {background-position: -356px 0;}
+}
+
+@media screen and (max-width: 435px) {
+    .wharton_main_header_area {background-position: -400px 0;}
+}
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* -------- ABOUT ---------- */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* >>>>> LG/XL <<<<< */
+
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 1280px){
+    .oldskool_photo {width: 400px; height: 300px;}
+}
+
+@media screen and (max-width: 991px){
+    .about_area {padding-top: 26px;}
+    .about_content p {font-size: 1rem;}
+    a.seemore_btn {top: 4px;}
+    .oldskool_photo_holder {padding-top: 175px;}
+    .oldskool_photo {width: 330px; height: 230px;}
+}
+
+@media screen and (max-width: 767px){
+    .oldskool_photo_holder {padding-top: 55px;}
+    .oldskool_photo {width: 100%; height: 400px;}
+}
+
+@media screen and (max-width: 620px){
+    .oldskool_photo_holder {padding-top: 55px; padding-right: 13px;}
+    .oldskool_photo {width: 100%; height: 300px;}
+}
+
+@media screen and (max-width: 440px){
+    .oldskool_photo_holder {padding-top: 55px;}
+    .oldskool_photo {width: 100%; height: 200px;}
+}
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* -------- TEAM ---------- */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* >>>>> LG/XL <<<<< */
+
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 991px){
+    .three_option_box {padding-left: 18px;}
+
+    .favoption_text h5 {font-size: 1.1rem;}
+
+    .favoption_circle {width: 30px; height: 30px; padding-top: 8px;}
+    span.bar, span.band, span.beer {height: 16px; width: 16px;}
+}
+
+@media screen and (max-width: 767px){
+    .three_option_box {min-height: 80px;}
+    .favoption_text {padding-left: 4px;}
+    .option {margin-right: 26px;}
+    .team_visible_default_holder {display: inline-block; text-align: center;}
+    .team_memba_hidden_area {display: inline-block; text-align: center;}
+    .team_memba_pic {height: 230px; width: 230px;}
+}
+
+@media screen and (max-width: 620px){
+    .team_memba_boxx {width: 85%;}
+    .option {clear: both; display: block;}
+
+    .favoption_text h5 {font-size: 1.2rem;}
+
+    .three_option_box {padding-left: 50px; min-height: 180px;}
+    .favoption_text {padding-left: 14px;}
+    .favoption_circle {width: 40px; height: 40px; padding-top: 9px;}
+    span.bar, span.band, span.beer {height: 22px; width: 22px;}
+}
+
+@media screen and (max-width: 420px){
+    .team_memba_boxx {width: 100%;}
+}
+
+
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* -------- BRANDS ---------- */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* >>>>> LG/XL <<<<< */
+
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 750px){
+    .brandz_area {padding-top: 28px;}
+}
+
+@media screen and (max-width: 660px){
+    .brandboxx {width: 23%;}
+    h2.brandz_area_ttl {margin-bottom: 32px;}
+}
+
+@media screen and (max-width: 525px){
+    .brandboxx {width: 32%;}
+}
+
+@media screen and (max-width: 360px){
+    .brandboxx {width: 49%;}
+}
+
+
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* -------- FOOTER ---------- */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* >>>>> LG/XL <<<<< */
+
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 1199px){
+    span.logo_footer_1 {width: 69px;}
+    span.logo_footer_2 {width: 180px;}
+    hr.footer_red_separator {width: 90%;}
+}
+
+@media screen and (max-width: 991px){
+    span.logo_footer_1 {width: 200px;}
+    hr.footer_red_separator {width: 100%;}
+}
+
+@media screen and (max-width: 767px){
+    .basement_logos_holder {display: block; width: 61%; margin: 0 auto;}
+    small.footer_microtext {text-align: center; margin-bottom: 42px;}
+    .footer_linxx_holder {float: left; margin-right: 2%;}
+    .footer_social_holder {float: right; left: -3%;}
+}
+
+@media screen and (max-width: 672px){
+    span.logo_footer_1 {width: 155px;}
+}
+
+@media screen and (max-width: 598px){
+    span.logo_footer_1 {width: 143px;}
+}
+
+@media screen and (max-width: 578px){
+    span.logo_footer_1 {width: 130px;}
+}
+
+@media screen and (max-width: 556px){
+    span.logo_footer_1 {width: 110px;}
+}
+
+@media screen and (max-width: 525px){
+    span.logo_footer_1 {width: 90px;}
+}
+
+@media screen and (max-width: 491px){
+    span.logo_footer_1 {width: 70px;}
+}
+
+@media screen and (max-width: 459px){
+    .basement_logos_holder {width: 99%;}
+    small.footer_microtext {text-align: left;}
+    ul.footer_linxx li a {font-size: 0.888rem;}
+}
+
+@media screen and (max-width: 417px){
+    ul.footer_socialz li {float: left; margin-right: 16px;}
+    .footer_social_holder {margin-bottom: 20px; float: left; left: -22px;}
+}
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* -------- AGE VALIDATOR ---------- */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* >>>>> LG/XL <<<<< */
+
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 991px){
+    .age_validator_logo_holder img {width: 22%;}
+    button.yes_btn, button.no_btn {width: 33%;}
+}
+
+@media screen and (max-width: 800px){
+    .validator_window {width: 90%;}
+}
+
+@media screen and (max-width: 630px){
+    .validator_window {width: 90%; height: 510px;}
+    h1.validator_question {font-size: 4rem;}
+    .age_validator_logo_holder img {width: 27%;}
+
+    h4.rejection_message {font-size: 2.6rem;}
+}
+
+@media screen and (max-width: 499px){
+    .validator_window {width: 90%; height: 510px;}
+    h1.validator_question {font-size: 3rem;}
+    button.yes_btn, button.no_btn {width: 43%;}
+
+    h4.rejection_message {font-size: 2.2rem;}
+}
+
+@media screen and (max-width: 420px){
+    .validator_window {width: 96%;}
+    .age_validator_logo_holder img {width: 36%;}
+
+    h4.rejection_message {font-size: 1.8rem;}
+}
+
+@media screen and (max-width: 400px){
+    .validator_window {width: 99%; height: 465px;}
+    .age_validator_logo_holder img {width: 38%;}
+
+    h4.rejection_message {font-size: 1.7rem;}
+}

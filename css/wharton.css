@@ -182,9 +182,9 @@ a.contact_homepage_button:hover, a.contact_homepage_button:focus {
 
 .go_down_chevron_holder {
     display: block;
-    width: 78%;
-    margin: 0 auto;
     position: absolute;
+    left: 0;
+    right: 0;
     bottom: 30px;
     text-align: center;
 }
@@ -347,6 +347,11 @@ a.seemore_btn:hover, a.seemore_btn:focus {
 /* ================================== */
 /* ---------- TEAM AREA ---------- */
 /* ================================== */
+
+.bgd_denoiser {
+    background: url('../img/blackforest_bgd.jpg') center center repeat-y !important;
+    background-size: 100% !important;
+}
 
 .team_area {
     min-height: 770px;
@@ -570,12 +575,30 @@ h2.brandz_area_ttl {
     margin-bottom: 46px;
 }
 
-a.brandlinx span {
-    display: block;
+.brandcircle {
+    padding-top: 12px;
+    position: relative;
+    display: inline-block;
     height: 100px;
     width: 100px;
     text-align: center;
+    border-radius: 100%;
+    background: #e7e7e7;
 }
+
+.brandcircle span {
+    height: 75px;
+    width: 75px;
+    display: inline-block;
+    text-align: center;
+}
+
+/*a.brandlinx span {*/
+    /*display: block;*/
+    /*height: 100px;*/
+    /*width: 100px;*/
+    /*text-align: center;*/
+/*}*/
 
 
 .all_brandz_button_holder {
@@ -885,31 +908,3 @@ ul.validator_socialz li a:hover, ul.validator_socialz li a:focus {
 }
 
 
-
-
-
-
-
-
-
-
-
-/* test */
-
-.brandcircle {
-    padding-top: 12px;
-    position: relative;
-    display: inline-block;
-    height: 100px;
-    width: 100px;
-    text-align: center;
-    border-radius: 100%;
-    background: #e7e7e7;
-}
-
-.brandcircle span {
-    height: 75px;
-    width: 75px;
-    display: inline-block;
-    text-align: center;
-}

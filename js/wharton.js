@@ -13,12 +13,14 @@ $(document).ready(function(){
     $(upperButton).on('click',function() {
 
         $(this).css('display','none');
+        $('.team_area').addClass('bgd_denoiser');
 
     });
 
     $(lowerButton).on('click',function() {
 
         $(upperButton).css('display','block');
+        $('.team_area').removeClass('bgd_denoiser');
 
     });
 
@@ -63,7 +65,7 @@ $(document).ready(function(){
         $('.yesno_buttonz').addClass('hidden');
         $('h4.rejection_message').removeClass('hidden');
 
-        window.location.replace("https://www.youtube.com/user/tutitutv");
+        // window.location.replace("https://www.youtube.com/user/tutitutv");
 
     });
 
