@@ -885,3 +885,31 @@ ul.validator_socialz li a:hover, ul.validator_socialz li a:focus {
 }
 
 
+
+
+
+
+
+
+
+
+
+/* test */
+
+.brandcircle {
+    padding-top: 12px;
+    position: relative;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    border-radius: 100%;
+    background: #e7e7e7;
+}
+
+.brandcircle span {
+    height: 75px;
+    width: 75px;
+    display: inline-block;
+    text-align: center;
+}
