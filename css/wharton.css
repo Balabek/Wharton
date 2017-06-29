@@ -35,7 +35,7 @@ body {
 
 }
 
-.main {
+#main {
     width: 100%;
     overflow-x: hidden;
 }
@@ -43,6 +43,12 @@ body {
 .navbar-default .navbar-toggle {
     margin-top: 22px;
     border: none;
+
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
 }
 
 
@@ -104,8 +110,12 @@ body {
     transition: all 0.4s ease-in-out;
 }
 
-.navbar-nav.hlxweb_nav li a:hover, .navbar-nav.hlxweb_nav li a:focus, .navbar-nav.hlxweb_nav li a:active {
+.navbar-nav.hlxweb_nav li a:hover, .navbar-nav.hlxweb_nav li a:active {
     color: #c82647 !important;
+}
+
+.navbar-nav.hlxweb_nav li a:focus {
+    color: #f7f7f7 !important;
 }
 
 .navbar-nav.hlxweb_nav li a.active {
@@ -114,9 +124,13 @@ body {
     pointer-events: none;
 }
 
-/*.navbar-nav.hlxweb_nav li:nth-child(4){*/
-    /*padding-right: 18px;*/
-/*}*/
+.rotator {
+    -webkit-transform: rotateZ(90deg);
+    -moz-transform: rotateZ(90deg);
+    -ms-transform: rotateZ(90deg);
+    -o-transform: rotateZ(90deg);
+    transform: rotateZ(90deg);
+}
 
 img.logo_4_header {
     width: 80%;
@@ -174,7 +188,8 @@ a.contact_homepage_button:hover, a.contact_homepage_button:focus {
 .wharton_main_header_area {
     position: relative;
     width: 100%;
-    height: 775px !important;
+    min-height: 775px;
+    height: auto;
     overflow: hidden;
     background: url(../img/main_bgd.jpg) no-repeat;
     background-size: cover;
@@ -334,12 +349,13 @@ a.seemore_btn:hover, a.seemore_btn:focus {
 
 
 .artificial_parallax_one {
-    height: 250px;
-    background: url("../img/temprary.jpg");
+    min-height: 350px;
+    height: auto;
+    background: url("../img/truck2.jpg");
     background-attachment: fixed;
-    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 100px 200px;
 }
 
 
@@ -534,12 +550,13 @@ a.seemore_btn_2:hover, a.seemore_btn_2:focus {
 
 
 .artificial_parallax_two {
-    height: 300px;
+    min-height: 300px;
+    height: auto;
     background: url("../img/metalbarrels_2.JPG");
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
 }
 
 
@@ -621,12 +638,13 @@ h2.brandz_area_ttl {
 
 
 .artificial_parallax_three {
-    height: 410px;
+    min-height: 410px;
+    height: auto;
     background: url("../img/oldtimez.png");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
 }
 
 
@@ -865,7 +883,8 @@ button.no_btn:hover, button.no_btn:focus {
 .validator_socialz_holder {
     position: absolute;
     bottom: 2px;
-    display: inline-block;
+    display: block;
+    margin: 0 auto;
     text-align: center;
     width: 100%;
 }
@@ -906,5 +925,156 @@ ul.validator_socialz li a:hover, ul.validator_socialz li a:focus {
     background: #262626;
     color: #ffffff;
 }
+
+
+
+
+
+/* ================================== */
+/* --------- CONTACT MODAL --------- */
+/* ================================== */
+
+.modal-dialog.wharton_contact_modal {
+    position: relative;
+    top: 5%;
+    display: block;
+    min-height: 650px;
+    height: auto;
+    width: 55%;
+    margin: 0 auto;
+    border-radius: 6px;
+    background: url('../img/blackforest_bgd_contact.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.modal-backdrop {
+    background-color: #c82647;
+    opacity: 0.8 !important;
+}
+
+.contact_modal_midmain {
+    padding-top: 35px;
+}
+
+h4.contact_modal_ttl {
+    font-family: "Open Sans Condensed", sans-serif;
+    text-align: center;
+    color: #c82647;
+    font-size: 2.3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.modal-header {
+    border: none;
+}
+
+span.close_me {
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    display: block;
+    height: 24px;
+    width: 24px;
+    background: url('../img/close.png') center center no-repeat;
+    background-size: contain;
+}
+
+.close {opacity: 0.88;}
+
+.form-group {margin-bottom: 2px;}
+
+.contact_form_holder {
+    display: block;
+    width: 94%;
+    margin: 0 auto;
+}
+
+input.wharton_contact_input {
+    height: 46px;
+    outline: none !important;
+    border: none !important;
+    background: #f9f9f9;
+    color: #c82647;
+    font-size: 1rem;
+    font-weight: 300;
+    padding-left: 12px;
+}
+
+textarea.wharton_contact_txt {
+    height: 250px;
+    outline: none !important;
+    border: none !important;
+    background: #f9f9f9;
+    color: #c82647;
+    font-size: 1rem;
+    font-weight: 300;
+    padding-left: 12px;
+    padding-top: 8px;
+    resize: none;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #c82647 !important;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #c82647 !important;
+    opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #c82647 !important;
+    opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #c82647 !important;
+}
+:-ms-input-placeholder { /* Microsoft Edge */
+    color: #c82647 !important;
+}
+
+.submit_btn_holder {
+    padding-top: 56px;
+}
+
+button.form_sbmt_btn {
+    font-family: "Proxima Nova", sans-serif;
+    position: relative;
+    top: 30px;
+    padding-top: 8px;
+    display: block;
+    margin: 0 auto;
+    width: 28%;
+    height: 50px;
+    border-radius: 2px;
+    background: #c82647;
+    color: #ffffff;
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 26px;
+
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+
+button.form_sbmt_btn:hover {
+    background: #ffffff;
+    color: #c82647;
+}
+
+
+
+
+
+
+
+
+
+
 
 

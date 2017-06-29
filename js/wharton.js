@@ -31,32 +31,36 @@ $(document).ready(function(){
     var lowerButton2 = $('#de_collapser_2');
 
     $(upperButton2).on('click',function() {
-
         $('.all_brandz_button_holder').css('display','none');
-
     });
 
     $(lowerButton2).on('click',function() {
-
         $('.all_brandz_button_holder').css('display','block');
-
     });
-
 
 
 
     // Animating the "go-to" anchor scroll
+
+    var collapseToggleButton = $('.navbar-default .navbar-toggle');
+    $(collapseToggleButton).on('click', function(){
+        $(this).toggleClass('rotator');
+    });
+
     $('a.anchor').click(function(){
         $('html, body').animate({
             scrollTop: $( $(this).attr('href') ).offset().top +10
         }, 800);
 
+        $('.navbar-collapse.collapse').removeClass('in');
+        $(collapseToggleButton).removeClass('rotator');
+
     });
 
 
 
 
-
+    // Age validation dialog logic
     var yesButton = $('#yup');
     var noButton = $('#nope');
 
@@ -65,7 +69,7 @@ $(document).ready(function(){
         $('.yesno_buttonz').addClass('hidden');
         $('h4.rejection_message').removeClass('hidden');
 
-        // window.location.replace("https://www.youtube.com/user/tutitutv");
+        window.location.replace("https://www.youtube.com/user/tutitutv");
 
     });
 
@@ -73,9 +77,6 @@ $(document).ready(function(){
         $('.age_validator').css('display','none');
 
     })
-
-
-
 
 
 

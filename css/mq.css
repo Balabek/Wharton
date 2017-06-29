@@ -71,7 +71,7 @@
 }
 
 @media screen and (max-width: 435px) {
-    .wharton_main_header_area {background-position: -400px 0;}
+    .wharton_main_header_area {background-position: -345px 0; min-height: 650px;}
 }
 
 
@@ -101,11 +101,17 @@
 @media screen and (max-width: 767px){
     .oldskool_photo_holder {padding-top: 55px;}
     .oldskool_photo {width: 100%; height: 400px;}
+
+    .artificial_parallax_one {background-size: 150%; background-attachment: initial;}
 }
 
 @media screen and (max-width: 620px){
     .oldskool_photo_holder {padding-top: 55px; padding-right: 13px;}
     .oldskool_photo {width: 100%; height: 300px;}
+}
+
+@media screen and (max-width: 525px){
+    .artificial_parallax_one {background-size: 160%; background-attachment: initial;}
 }
 
 @media screen and (max-width: 440px){
@@ -155,6 +161,10 @@
     span.bar, span.band, span.beer {height: 22px; width: 22px;}
 }
 
+@media screen and (max-width: 525px){
+    .artificial_parallax_two {background-size: 180%; background-attachment: initial;}
+}
+
 @media screen and (max-width: 420px){
     .team_memba_boxx {width: 100%;}
 }
@@ -172,6 +182,10 @@
 
 
 /* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 767px){
+    .brandboxx {width: 24%;}
+}
 
 @media screen and (max-width: 750px){
     .brandz_area {padding-top: 28px;}
@@ -240,6 +254,8 @@
 
 @media screen and (max-width: 525px){
     span.logo_footer_1 {width: 90px;}
+
+    .artificial_parallax_three {background-size: 200%; background-attachment: initial;}
 }
 
 @media screen and (max-width: 491px){
@@ -307,3 +323,44 @@
 
     h4.rejection_message {font-size: 1.7rem;}
 }
+
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* -------- CONTACT MODAL ---------- */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* >>>>> LG/XL <<<<< */
+
+
+/* >>>>> SM/XS <<<<< */
+@media screen and (max-width: 1199px){
+    .modal-dialog.wharton_contact_modal {width: 70%;}
+}
+
+@media screen and (max-width: 991px){
+    button.form_sbmt_btn {top: 35px; width: 44%;}
+    .modal-dialog.wharton_contact_modal {width: 85%;}
+}
+
+@media screen and (max-width: 767px){
+    .contact_modal_midmain {padding-top: 4px;}
+    button.form_sbmt_btn {top: -40px;}
+    span.close_me {right: -16px; top: -20px;}
+}
+
+@media screen and (max-width: 630px){
+    .modal-dialog.wharton_contact_modal {width: 90%;}
+}
+
+@media screen and (max-width: 400px){
+    button.form_sbmt_btn {top: -35px; width: 55%;}
+    .modal-dialog.wharton_contact_modal {width: 92%;}
+    span.close_me {right: 4px; top: 4px; height: 18px; width: 18px;}
+}
+
+
+
+

@@ -50,6 +50,47 @@
     </div>
 </div> <!-- Age Validator END -->
 
+<!-- Contact Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalDialog">
+    <div class="modal-dialog wharton_contact_modal" role="document">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="close_me"></span></button>
+            <h4 class="contact_modal_ttl">Add your name to our distribution list</h4>
+        </div>
+        <div class="contact_modal_midmain">
+            <div class="row">
+                <div class="contact_form_holder">
+                    <form id="whartonContact" class="contactform" role="form">
+                        <div class="form-group col-sm-6">
+                            <label for="firstName"></label>
+                            <input type="text" class="form-control wharton_contact_input" id="firstName" placeholder="First Name" onfocus="placeholder='' " onblur="'First Name' ">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="lastName"></label>
+                            <input type="text" class="form-control wharton_contact_input" id="lastName" placeholder="Last Name" onfocus="placeholder='' " onblur="'Last Name' ">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="email"></label>
+                            <input type="text" class="form-control wharton_contact_input" id="email" placeholder="Email" onfocus="placeholder='' " onblur="'Email' ">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="phone"></label>
+                            <input type="text" class="form-control wharton_contact_input" id="phone" placeholder="Phone" onfocus="placeholder='' " onblur="'Phone' ">
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <label for="message"></label>
+                            <textarea type="text" class="form-control wharton_contact_txt" id="message" placeholder="Message" onfocus="placeholder='' " onblur="'Message' "></textarea>
+                        </div>
+                        <div class="center-block submit_btn_holder">
+                            <button type="submit" class="btn form_sbmt_btn">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- Contact Modal END -->
+
 <div id="main">
     <div class="selection" id="selection0">
         <header>
@@ -75,7 +116,7 @@
                             <li><a href="#selection1" class="anchor">ABOUT</a></li>
                             <li><a href="#selection2" class="anchor">TEAM</a></li>
                             <li><a href="#selection3" class="anchor">BRANDS</a></li>
-                            <li><a href="#" class="anchor">CONTACT</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#contactModal">CONTACT</a></li>
                         </ul>
 
                     </div><!-- /.navbar-collapse -->
@@ -641,7 +682,7 @@
                                     </div> <!-- Team Memba Box END -->
 
                                     <div class="col-sm-4 team_memba_boxx">
-                                        <div class="team_memba_pic" style="background: url('img/colleen.png') center center no-repeat; background-size: cover;"></div>
+                                        <div class="team_memba_pic" style="background: url('img/Colleen.png') center center no-repeat; background-size: cover;"></div>
                                         <h4 class="team_memba_name">Colleen</h4>
                                         <hr class="team_memba_red_separator">
                                         <div class="three_option_box">
@@ -678,7 +719,7 @@
                                     </div> <!-- Team Memba Box END -->
 
                                     <div class="col-sm-4 team_memba_boxx">
-                                        <div class="team_memba_pic" style="background: url('img/caitlin.jpg') center center no-repeat; background-size: cover;"></div>
+                                        <div class="team_memba_pic" style="background: url('img/Caitlin.JPG') center center no-repeat; background-size: cover;"></div>
                                         <h4 class="team_memba_name">Caitlin</h4>
                                         <hr class="team_memba_red_separator">
                                         <div class="three_option_box">
@@ -743,64 +784,64 @@
 
                             <!-- Row 1 -->
                             <div class="col-sm-2 brandboxx">
-                                <a href="#" class="brandcircle hvr-float">
+                                <a href="http://neshaminycreekbrewing.com" class="brandcircle hvr-float">
                                     <span style="background: url('img/brand_1.png') center center no-repeat; background-size: cover;"></span>
                                 </a>
                             </div>
                             <div class="col-sm-2 brandboxx">
-                                <a href="#" class="brandcircle hvr-float">
+                                <a href="http://www.halfacrebeer.com" class="brandcircle hvr-float">
                                     <span style="background: url('img/brand_2.png') center center no-repeat; background-size: cover;"></span>
                                 </a>
                             </div>
                             <div class="col-sm-2 brandboxx">
-                                <a href="#" class="brandcircle hvr-float">
+                                <a href="https://cigarcitybrewing.com" class="brandcircle hvr-float">
                                     <span style="background: url('img/brand_3.png') center center no-repeat; background-size: cover;"></span>
                                 </a>
                             </div>
                             <div class="col-sm-2 brandboxx">
-                                <a href="#" class="brandcircle hvr-float">
+                                <a href="https://duclaw.com" class="brandcircle hvr-float">
                                     <span style="background: url('img/brand_4.png') center center no-repeat; background-size: cover;"></span>
                                 </a>
                             </div>
                             <div class="col-sm-2 brandboxx">
-                                <a href="#" class="brandcircle hvr-float">
+                                <a href="http://www.darkhorsebrewery.com" class="brandcircle hvr-float">
                                     <span style="background: url('img/brand_5.png') center center no-repeat; background-size: cover;"></span>
                                 </a>
                             </div>
                             <div class="col-sm-2 brandboxx">
-                                <a href="#" class="brandcircle hvr-float">
+                                <a href="http://alesmith.com" class="brandcircle hvr-float">
                                     <span style="background: url('img/brand_6.png') center center no-repeat; background-size: cover;"></span>
                                 </a>
                             </div>
 
                             <!-- Row 2 -->
                             <div class="col-sm-2 brandboxx">
-                                <a href="#" class="brandcircle hvr-float">
+                                <a href="http://www.almanacbeer.com" class="brandcircle hvr-float">
                                     <span style="background: url('img/brand_7.png') center center no-repeat; background-size: cover;"></span>
                                 </a>
                             </div>
                             <div class="col-sm-2 brandboxx">
-                                <a href="#" class="brandcircle hvr-float">
+                                <a href="https://boulderbeer.com" class="brandcircle hvr-float">
                                     <span style="background: url('img/brand_8.png') center center no-repeat; background-size: cover;"></span>
                                 </a>
                             </div>
                             <div class="col-sm-2 brandboxx">
-                                <a href="#" class="brandcircle hvr-float">
+                                <a href="http://www.thebruery.com/beer/" class="brandcircle hvr-float">
                                     <span style="background: url('img/brand_9.png') center center no-repeat; background-size: cover;"></span>
                                 </a>
                             </div>
                             <div class="col-sm-2 brandboxx">
-                                <a href="#" class="brandcircle hvr-float">
+                                <a href="http://www.dcbrau.com" class="brandcircle hvr-float">
                                     <span style="background: url('img/brand_10.png') center center no-repeat; background-size: cover;"></span>
                                 </a>
                             </div>
                             <div class="col-sm-2 brandboxx">
-                                <a href="#" class="brandcircle hvr-float">
+                                <a href="https://www.clownshoesbeer.com" class="brandcircle hvr-float">
                                     <span style="background: url('img/brand_11.png') center center no-repeat; background-size: cover;"></span>
                                 </a>
                             </div>
                             <div class="col-sm-2 brandboxx">
-                                <a href="#" class="brandcircle hvr-float">
+                                <a href="https://www.shortsbrewing.com" class="brandcircle hvr-float">
                                     <span style="background: url('img/brand_12.png') center center no-repeat; background-size: cover;"></span>
                                 </a>
                             </div>
@@ -817,17 +858,17 @@
 
                                     <!-- Row 1 -->
                                     <div class="col-sm-2 brandboxx">
-                                        <a href="#" class="brandcircle hvr-float">
+                                        <a href="http://4handsbrewery.com" class="brandcircle hvr-float">
                                             <span style="background: url('img/brand_13.png') center center no-repeat; background-size: cover;"></span>
                                         </a>
                                     </div>
                                     <div class="col-sm-2 brandboxx">
-                                        <a href="#" class="brandcircle hvr-float">
+                                        <a href="http://www.perennialbeer.com" class="brandcircle hvr-float">
                                             <span style="background: url('img/brand_14.png') center center no-repeat; background-size: cover;"></span>
                                         </a>
                                     </div>
                                     <div class="col-sm-2 brandboxx">
-                                        <a href="#" class="brandcircle hvr-float">
+                                        <a href="http://www.voodoobrewery.com" class="brandcircle hvr-float">
                                             <span style="background: url('img/brand_15.png') center center no-repeat; background-size: cover;"></span>
                                         </a>
                                     </div>
@@ -1042,7 +1083,13 @@
 <script type="text/javascript" src="slick-1.6.0/slick/slick.js"></script>
 <script type="text/javascript" src="js/skrollr.min.js"></script>
 <script>
-    var s = skrollr.init();
+//    var s = skrollr.init();
+    skrollr.init({
+        mobileCheck: function() {
+            //hack - forces mobile version to be off
+            return false;
+        }
+    });
 </script>
 <script type="text/javascript" src="js/wharton.js"></script>
 
