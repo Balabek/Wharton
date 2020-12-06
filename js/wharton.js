@@ -41,7 +41,6 @@ $(document).ready(function(){
 
 
     // Animating the "go-to" anchor scroll
-
     var collapseToggleButton = $('.navbar-default .navbar-toggle');
     $(collapseToggleButton).on('click', function(){
         $(this).toggleClass('rotator');
@@ -63,6 +62,7 @@ $(document).ready(function(){
     // Age validation dialog logic
     var yesButton = $('#yup');
     var noButton = $('#nope');
+    var ageValidator = $('.age_validator');
 
     $(noButton).on('click', function() {
         $('h1.validator_question').addClass('hidden');
@@ -70,13 +70,20 @@ $(document).ready(function(){
         $('h4.rejection_message').removeClass('hidden');
 
         window.location.replace("https://www.youtube.com/user/tutitutv");
+    });
+
+
+    // if($(ageValidator).hasClass('show_validator')) {
+    //     $(this).scrollTop(0);
+    //     $('body').css('overflow','hidden');
+    // }
+
+    $(yesButton).on('click', function() {
+        $(ageValidator).addClass('hide_validator');
+        $('body').css('overflow','scroll');
 
     });
 
-    $(yesButton).on('click', function() {
-        $('.age_validator').css('display','none');
-
-    })
 
 
 

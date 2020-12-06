@@ -25,7 +25,7 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 body {
     position: relative;
     min-height: 100%;
-    font-family: "Lato", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     height: 100%;
     max-width: 100%;
@@ -188,7 +188,8 @@ a.contact_homepage_button:hover, a.contact_homepage_button:focus {
 .wharton_main_header_area {
     position: relative;
     width: 100%;
-    min-height: 775px;
+    /*min-height: 775px;*/
+    min-height: 100vh;
     height: auto;
     overflow: hidden;
     background: url(../img/main_bgd.jpg) no-repeat;
@@ -267,11 +268,11 @@ ul.vertical_socialz li a:hover, ul.vertical_socialz li a:focus {
     background: #000000;
     min-height: 710px;
     padding-top: 85px;
-    padding-bottom: 55px;
+    padding-bottom: 100px;
 }
 
 .about_content h2 {
-    font-family: "Proxima Nova", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 2.6rem;
     font-weight: 700;
     color: #ffffff;
@@ -290,8 +291,8 @@ span.wavvyy {
 }
 
 .about_content p {
-    font-family: "Proxima Nova", sans-serif;
-    font-size: 1.174rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.134rem;
     font-weight: 400;
     color: #ffffff;
     text-align: center;
@@ -326,7 +327,7 @@ a.seemore_btn:hover, a.seemore_btn:focus {
 }
 
 .oldskool_photo_holder {
-    padding-top: 75px;
+    padding-top: 120px;
     padding-right: 26px;
 }
 
@@ -349,9 +350,9 @@ a.seemore_btn:hover, a.seemore_btn:focus {
 
 
 .artificial_parallax_one {
-    min-height: 350px;
+    min-height: 450px;
     height: auto;
-    background: url("../img/truck2.jpg");
+    background: url("../img/newtruck_003.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -378,7 +379,7 @@ a.seemore_btn:hover, a.seemore_btn:focus {
 }
 
 h2.team_area_ttl {
-    font-family: "Proxima Nova", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 2.6rem;
     font-weight: 700;
     color: #ffffff;
@@ -403,7 +404,7 @@ h2.team_area_ttl {
 }
 
 h4.team_memba_name {
-    font-family: "Proxima Nova", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 1.4rem;
     font-weight: 400;
     color: #ffffff;
@@ -577,7 +578,7 @@ a.seemore_btn_2:hover, a.seemore_btn_2:focus {
 }
 
 h2.brandz_area_ttl {
-    font-family: "Proxima Nova", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 2.6rem;
     font-weight: 700;
     color: #ffffff;
@@ -766,8 +767,10 @@ ul.footer_socialz li a:hover, ul.footer_socialz li a:focus {
 /* --------- AGE VALIDATOR --------- */
 /* ================================== */
 
+.hide_validator {display: none !important;}
+.show_validator {display: block;}
+
 .age_validator {
-    /*display: none;*/
     position: absolute;
     top: 0;
     left: 0;
@@ -778,10 +781,10 @@ ul.footer_socialz li a:hover, ul.footer_socialz li a:focus {
 }
 
 .validator_window {
-    display: block;
     border-radius: 5px;
     width: 70%;
-    height: 650px;
+    min-height: 620px;
+    height: auto;
     margin: 0 auto;
     position: relative;
     top: 1%;
@@ -832,7 +835,7 @@ button.yes_btn {
     position: relative;
     display: inline-block;
     margin: 0 auto;
-    font-family: "Proxima Nova", sans-serif;
+    font-family: "Montserrat", sans-serif;
     width: 25%;
     background: #ffffff;
     font-size: 2.6rem;
@@ -841,6 +844,7 @@ button.yes_btn {
     height: 60px;
     margin-right: 24px;
     letter-spacing: 2px;
+    padding-top: 5px;
 
     -webkit-transition: all 0.4s linear;
     -moz-transition: all 0.4s linear;
@@ -859,7 +863,7 @@ button.no_btn {
     position: relative;
     display: inline-block;
     margin: 0 auto;
-    font-family: "Proxima Nova", sans-serif;
+    font-family: "Montserrat", sans-serif;
     width: 25%;
     background: #252525;
     font-size: 2.6rem;
@@ -867,6 +871,7 @@ button.no_btn {
     color: #c82647;
     height: 60px;
     letter-spacing: 2px;
+    padding-top: 5px;
 
     -webkit-transition: all 0.4s linear;
     -moz-transition: all 0.4s linear;
@@ -936,12 +941,11 @@ ul.validator_socialz li a:hover, ul.validator_socialz li a:focus {
 
 .modal-dialog.wharton_contact_modal {
     position: relative;
-    top: 5%;
+    margin-top: 5%;
     display: block;
     min-height: 650px;
     height: auto;
     width: 55%;
-    margin: 0 auto;
     border-radius: 6px;
     background: url('../img/blackforest_bgd_contact.jpg') center center no-repeat;
     background-size: cover;
@@ -980,7 +984,22 @@ span.close_me {
     background-size: contain;
 }
 
-.close {opacity: 0.88;}
+.close {
+    opacity: 0.88;
+    color: #ffffff;
+
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+
+}
+
+.close:hover {
+    opacity: 0.4;
+    color: #ffffff;
+}
 
 .form-group {margin-bottom: 2px;}
 
@@ -1037,7 +1056,7 @@ textarea.wharton_contact_txt {
 }
 
 button.form_sbmt_btn {
-    font-family: "Proxima Nova", sans-serif;
+    font-family: "Montserrat", sans-serif;
     position: relative;
     top: 30px;
     padding-top: 8px;
@@ -1066,15 +1085,3 @@ button.form_sbmt_btn:hover {
     background: #ffffff;
     color: #c82647;
 }
-
-
-
-
-
-
-
-
-
-
-
-

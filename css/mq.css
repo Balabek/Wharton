@@ -48,6 +48,14 @@
 /* !!!!!!!!!!!!!!!!!!!!!!!! */
 
 /* >>>>> LG/XL <<<<< */
+/*@media screen and (min-width: 1600px){*/
+    /*.wharton_main_header_area {min-height: 905px;}*/
+/*}*/
+
+/*@media screen and (min-width: 1900px){*/
+    /*.wharton_main_header_area {min-height: 1055px;}*/
+/*}*/
+
 
 
 /* >>>>> SM/XS <<<<< */
@@ -64,6 +72,8 @@
         top: -12px;
         width: 75%;
     }
+
+    .vertical_socialz_holder {left: -2%;}
 }
 
 @media screen and (max-width: 535px) {
@@ -72,6 +82,7 @@
 
 @media screen and (max-width: 435px) {
     .wharton_main_header_area {background-position: -345px 0; min-height: 650px;}
+    .vertical_socialz_holder {left: -5%;}
 }
 
 
@@ -86,12 +97,16 @@
 
 /* >>>>> SM/XS <<<<< */
 
+@media screen and (max-width: 1199px){
+    .about_area {padding-bottom: 90px;}
+}
+
 @media screen and (max-width: 1280px){
     .oldskool_photo {width: 400px; height: 300px;}
 }
 
 @media screen and (max-width: 991px){
-    .about_area {padding-top: 26px;}
+    .about_area {padding-top: 26px; padding-bottom: 55px;}
     .about_content p {font-size: 1rem;}
     a.seemore_btn {top: 4px;}
     .oldskool_photo_holder {padding-top: 175px;}
@@ -102,7 +117,7 @@
     .oldskool_photo_holder {padding-top: 55px;}
     .oldskool_photo {width: 100%; height: 400px;}
 
-    .artificial_parallax_one {background-size: 150%; background-attachment: initial;}
+    .artificial_parallax_one {background-size: 170%; background-attachment: initial;}
 }
 
 @media screen and (max-width: 620px){
@@ -111,12 +126,14 @@
 }
 
 @media screen and (max-width: 525px){
-    .artificial_parallax_one {background-size: 160%; background-attachment: initial;}
+    .artificial_parallax_one {background-size: 260%; background-attachment: initial;}
 }
 
 @media screen and (max-width: 440px){
     .oldskool_photo_holder {padding-top: 55px;}
     .oldskool_photo {width: 100%; height: 200px;}
+
+    .artificial_parallax_one {background-size: 300%; background-attachment: initial;}
 }
 
 
@@ -131,10 +148,16 @@
 
 /* >>>>> SM/XS <<<<< */
 
-@media screen and (max-width: 991px){
-    .three_option_box {padding-left: 18px;}
+@media screen and (max-width: 1199px){
+    .three_option_box {padding-left: 6px;}
+    .favoption_text p {font-size: 0.88rem;}
+}
 
-    .favoption_text h5 {font-size: 1.1rem;}
+@media screen and (max-width: 991px){
+    .three_option_box {padding-left: 4px;}
+
+    .favoption_text h5 {font-size: 0.9rem;}
+    .favoption_text p {font-size: 0.7rem;}
 
     .favoption_circle {width: 30px; height: 30px; padding-top: 8px;}
     span.bar, span.band, span.beer {height: 16px; width: 16px;}
@@ -163,13 +186,22 @@
 
 @media screen and (max-width: 525px){
     .artificial_parallax_two {background-size: 180%; background-attachment: initial;}
+
+    .favoption_text h5 {font-size: 1rem;}
+    .favoption_text p {font-size: 0.8rem;}
 }
 
 @media screen and (max-width: 420px){
     .team_memba_boxx {width: 100%;}
+
 }
 
+@media screen and (max-width: 355px){
+    .favoption_text h5 {font-size: 0.9rem;}
+    .favoption_text p {font-size: 0.7rem;}
 
+    .favoption_circle {margin-bottom: 6px;}
+}
 
 
 
@@ -193,7 +225,7 @@
 
 @media screen and (max-width: 660px){
     .brandboxx {width: 23%;}
-    h2.brandz_area_ttl {margin-bottom: 32px;}
+    h2.brandz_area_ttl {margin-bottom: 50px;}
 }
 
 @media screen and (max-width: 525px){
@@ -273,6 +305,10 @@
     .footer_social_holder {margin-bottom: 20px; float: left; left: -22px;}
 }
 
+@media screen and (max-width: 403px){
+    .footer_social_holder {clear: both;}
+}
+
 
 
 
@@ -285,6 +321,15 @@
 
 /* >>>>> SM/XS <<<<< */
 
+@media screen and (max-width: 1280px){
+    .validator_window {min-height: 560px; height: auto;}
+}
+
+@media screen and (max-width: 1199px){
+    .validator_window {min-height: 555px; height: auto;}
+    ul.validator_socialz {bottom: 12px;}
+}
+
 @media screen and (max-width: 991px){
     .age_validator_logo_holder img {width: 22%;}
     button.yes_btn, button.no_btn {width: 33%;}
@@ -295,7 +340,7 @@
 }
 
 @media screen and (max-width: 630px){
-    .validator_window {width: 90%; height: 510px;}
+    .validator_window {width: 90%; min-height: 510px;}
     h1.validator_question {font-size: 4rem;}
     .age_validator_logo_holder img {width: 27%;}
 
@@ -303,7 +348,7 @@
 }
 
 @media screen and (max-width: 499px){
-    .validator_window {width: 90%; height: 510px;}
+    .validator_window {width: 90%; min-height: 499px;}
     h1.validator_question {font-size: 3rem;}
     button.yes_btn, button.no_btn {width: 43%;}
 
@@ -311,7 +356,7 @@
 }
 
 @media screen and (max-width: 420px){
-    .validator_window {width: 96%;}
+    .validator_window {width: 94%;}
     .age_validator_logo_holder img {width: 36%;}
 
     h4.rejection_message {font-size: 1.8rem;}
@@ -342,10 +387,11 @@
 
 @media screen and (max-width: 991px){
     button.form_sbmt_btn {top: 35px; width: 44%;}
-    .modal-dialog.wharton_contact_modal {width: 85%;}
+    .modal-dialog.wharton_contact_modal {width: 85%; margin-top: 9%;}
 }
 
 @media screen and (max-width: 767px){
+    .modal-dialog.wharton_contact_modal {margin: 0 auto; top: 55px;}
     .contact_modal_midmain {padding-top: 4px;}
     button.form_sbmt_btn {top: -40px;}
     span.close_me {right: -16px; top: -20px;}
@@ -357,7 +403,7 @@
 
 @media screen and (max-width: 400px){
     button.form_sbmt_btn {top: -35px; width: 55%;}
-    .modal-dialog.wharton_contact_modal {width: 92%;}
+    .modal-dialog.wharton_contact_modal {margin-top: 11%;}
     span.close_me {right: 4px; top: 4px; height: 18px; width: 18px;}
 }
 
